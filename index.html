@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Foodylicous</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/dist/style.css">
   <script src="/script/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </head>
+
 <body>
   <h1>Foodylicous</h1>
-  <div class="checkbox">
-    <label class="container">Vegan
-      <input type="checkbox" checked="checked">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">Vegetarian
-      <input type="checkbox" checked="checked">
-      <span class="checkmark"></span>
-    </label>
-    <label class="container">Meat
-      <input type="checkbox" checked="checked">
-      <span class="checkmark"></span>
-    </label>
+  <div class="o-list c-toggle-list">
+    <div class="div-midden">
+      <li class="c-form-field c-form-field--option c-toggle-list__item">
+        <input class="o-hide-accessible c-option c-option--hidden js-radio" name="fav_language" type="radio" id="toggle1" data-type="vegitarian">
+        <label class="c-label c-label--option c-custom-toggle c-custom-toggle--inverted" for="toggle1">
+          <span class="c-custom-toggle__fake-input c-toggle__label--inverted">
+          </span>
+          Vegitarian
+        </label>
+      </li>
+
+      
+      <li class="c-form-field c-form-field--option c-toggle-list__item ">
+        <input class="o-hide-accessible c-option c-option--hidden js-radio" name="fav_language" type="radio" id="toggle2" data-type="meat">
+        <label class="c-label c-label--option c-custom-toggle c-custom-toggle--inverted" for="toggle2">
+          <span class="c-custom-toggle__fake-input c-toggle__label--inverted">
+          </span>
+          Meat
+        </label>
+      </li>
+      <li class="c-form-field c-form-field--option c-toggle-list__item">
+        <input class="o-hide-accessible c-option c-option--hidden js-radio" name="fav_language" type="radio" id="toggle3" data-type="vegan">
+        <label class="c-label c-label--option c-custom-toggle c-custom-toggle--inverted" for="toggle3">
+          <span class="c-custom-toggle__fake-input c-toggle__label--inverted">
+          </span>
+          Vegan
+        </label>
+      </li>
+      <li class="c-form-field c-form-field--option c-toggle-list__item">
+        <input class="o-hide-accessible c-option c-option--hidden js-radio" name="fav_language" type="radio" id="toggle4" data-type="">
+        <label class="c-label c-label--option c-custom-toggle c-custom-toggle--inverted" for="toggle4">
+          <span class="c-custom-toggle__fake-input c-toggle__label--inverted">
+          </span>
+          mix
+        </label>
+      </li>
+    </div>
   </div>
-  <section class="grids">
+  <section class="grids ">
 
   </section>
-  <section class="grids">
-    <a href="" class="grid">
-      
-      <div class="grid__image" style="background-image:url()"></div>
-      <div class="grid__content">
-        <div class="grid__title"></div>
-        <div class="grid__description">
-          
-        </div>
-      </div>    
-      
-      <div class="grid__readtime"></div>
-      <!-- <canvas class="chart" id="doughnut-chart" width="250" height="225"></canvas> -->
-      </a>`
-  </section>
-  
+  <canvas id="myChart"></canvas>
+  <canvas id="myChart" width="400" height="400"></canvas>
 </body>
+
 </html>
