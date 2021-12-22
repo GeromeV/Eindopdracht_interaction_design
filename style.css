@@ -30,13 +30,13 @@ a:visited {
 @font-face {
   font-family: 'Inter Web';
   font-weight: 400;
-  src: url('../fonts/Inter-Regular.woff2') format('woff2');
+  src: url('Inter-Regular.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Inter Web';
   font-weight: 600;
-  src: url('../fonts/Inter-SemiBold.woff2') format('woff2');
+  src: url('Inter-SemiBold.woff2') format('woff2');
 }
 
 /*------------------------------------*\
