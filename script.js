@@ -15,7 +15,8 @@ let categoriekeuze = () => {
 let getAPI = async () => {
 	// Eerst bouwen we onze url op
 	let key = "09973560d06744a0afca860418a70227";
-	url = `https://api.spoonacular.com/recipes/random?number=7&tags=${categorie},main course&apiKey=${key}`;
+	let key2 ="9eb8c821f52e4b57acef26251f56cba1"
+	url = `https://api.spoonacular.com/recipes/random?number=7&tags=${categorie},main course&apiKey=${key2}`;
 
 	console.log(url);
 
