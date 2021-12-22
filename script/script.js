@@ -87,7 +87,7 @@ let showresults = (queryResponse) => {
 	//console.log(lengte);
 	for (let i = 0; i < lengte; i++) {
 		//${queryResponse.recipes[i].spoonacularSourceUrl}
-		grid.innerHTML += ` <a href="#" id="a" class="grid js-grid">
+		grid.innerHTML += ` <a href="${queryResponse.recipes[i].spoonacularSourceUrl}" id="a" class="grid js-grid">
         <div class="grid__overlay">
 		<span>Read More</span>
         </div>
