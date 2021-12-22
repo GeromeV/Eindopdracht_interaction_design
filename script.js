@@ -15,8 +15,9 @@ let categoriekeuze = () => {
 let getAPI = async () => {
 	// Eerst bouwen we onze url op
 	let key = "09973560d06744a0afca860418a70227";
-	let key2 ="9eb8c821f52e4b57acef26251f56cba1"
-	url = `https://api.spoonacular.com/recipes/random?number=7&tags=${categorie},main course&apiKey=${key2}`;
+	let key2 ="9eb8c821f52e4b57acef26251f56cba1";
+	let key3 ="03143f69f440411fbed149fbac055ad1"
+	url = `https://api.spoonacular.com/recipes/random?number=7&tags=${categorie},main course&apiKey=${key3}`;
 
 	console.log(url);
 
@@ -37,7 +38,7 @@ let getAPI = async () => {
 	id6 = reusult.recipes[5].id;
 	id7 = reusult.recipes[6].id;
 
-	url2 = `https://api.spoonacular.com/recipes/informationBulk?ids=${id1},${id2},${id3},${id4},${id5},${id6},${id6}&includeNutrition=true&apiKey=${key}`
+	url2 = `https://api.spoonacular.com/recipes/informationBulk?ids=${id1},${id2},${id3},${id4},${id5},${id6},${id6}&includeNutrition=true&apiKey=${key3}`
 	const request2 = await fetch(`${url2}`);
 	const reusult2 = await request2.json();
 	console.log(reusult2);
