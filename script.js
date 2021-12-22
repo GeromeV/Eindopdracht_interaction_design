@@ -38,7 +38,7 @@ let getAPI = async () => {
 	id6 = reusult.recipes[5].id;
 	id7 = reusult.recipes[6].id;
 
-	url2 = `https://api.spoonacular.com/recipes/informationBulk?ids=${id1},${id2},${id3},${id4},${id5},${id6},${id6}&includeNutrition=true&apiKey=${key3}`
+	url2 = `https://api.spoonacular.com/recipes/informationBulk?ids=${id1},${id2},${id3},${id4},${id5},${id6},${id7}&includeNutrition=true&apiKey=${key3}`
 	const request2 = await fetch(`${url2}`);
 	const reusult2 = await request2.json();
 	console.log(reusult2);
